@@ -2,16 +2,16 @@
 Square = __import__('0-square').Square
 
 my_square = Square(3)
-print(type(my_square))  # <class '0-square.Square'>
-print(my_square.__dict__)  # {'_Square__size': 3}
+print(type(my_square))
+print(my_square.__dict__)
 
 try:
-    print(my_square.size)  # Bu xətaya səbəb olacaq
+    print(my_square.size)
 except Exception as e:
     print(e)
 
 try:
-    print(my_square.__size)  # Bu da xətaya səbəb olacaq
+    print(my_square.__size)
 except Exception as e:
     print(e)
 
